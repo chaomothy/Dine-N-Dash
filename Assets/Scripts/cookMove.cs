@@ -25,7 +25,7 @@ public class cookMove : MonoBehaviour
         if(stillCooking == "y")
         {
         
-            GetComponent<Transform>().position = new Vector3(-6.5f, -0.1f, 4f);
+            GetComponent<Transform>().position = new Vector3(-6.5f, -0.1f, 4.8f);
             GameManager.plateValue += foodValue;
             stillCooking = "n";
         
