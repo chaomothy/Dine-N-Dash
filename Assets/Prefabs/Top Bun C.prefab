@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 84584921493223583}
   - component: {fileID: 7090461577627180419}
   - component: {fileID: 667633646276774196}
+  - component: {fileID: 4562682423662766578}
   m_Layer: 0
   m_Name: Top Bun C
   m_TagString: Untagged
@@ -148,3 +149,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cloneObj: {fileID: 0}
   foodValue: 1
+--- !u!114 &4562682423662766578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4434837482399304211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae17457ff09dc4c4eb7727d55d96c94d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

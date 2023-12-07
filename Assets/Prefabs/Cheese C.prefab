@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1444317919904789469}
   - component: {fileID: 2546944950876558108}
   - component: {fileID: 1028479613404043212}
+  - component: {fileID: -8056840906238642139}
   m_Layer: 0
   m_Name: Cheese C
   m_TagString: Untagged
@@ -148,3 +149,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cloneObj: {fileID: 0}
   foodValue: 10
+--- !u!114 &-8056840906238642139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8288002378733128648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae17457ff09dc4c4eb7727d55d96c94d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
