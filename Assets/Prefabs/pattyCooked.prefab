@@ -81,7 +81,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cheeseObj: {fileID: 5420432014975695801, guid: ffbe7276a0c346e4895d10561e6cc74f, type: 3}
-  baconObj: {fileID: 3560217670995693434, guid: e99f5dc6c32e483408d25ff1ad5ccc46, type: 3}
+  baconObj: {fileID: 4152851841929810621, guid: 7a68cb97fd59bf14584faba6d87ff0dc, type: 3}
+  steamObj: {fileID: 3265475950618297787, guid: 6296be70f24a01e4ba2ada79a2f418c4, type: 3}
+  placePatty: n
+  rawPatty: {fileID: 2100000, guid: 13a65f78a47e5c3459177f801eaa00a4, type: 2}
+  cookedPatty: {fileID: 2100000, guid: 7cace53ed93944f4f86d010d29a94746, type: 2}
+  burntPatty: {fileID: 2100000, guid: d44abec0ac5732644bac563d3c604ba4, type: 2}
+  cookingTime: 0
 --- !u!65 &8939482198350750837
 BoxCollider:
   m_ObjectHideFlags: 0

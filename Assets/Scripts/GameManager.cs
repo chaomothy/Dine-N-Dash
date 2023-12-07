@@ -12,5 +12,8 @@ public class GameManager : MonoBehaviour
     public static string bunChosen = "n";
 
     public static string anyPattyChosen = "n";
+    public static string isTrashClicked = "n";
+    
+    public static string destroySteam = "n";
 
 }
