@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cheeseCrate : MonoBehaviour
+public class baconCrate : MonoBehaviour
 {
-    public Transform burgerCheeseObj;
+    public Transform baconObj;
 
 
     void OnMouseDown()
     {
     
-        GameManager.placeCheese = "y";
+        GameManager.placeBacon = "y";
     
     }
-
-    
 }

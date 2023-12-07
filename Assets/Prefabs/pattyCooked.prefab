@@ -55,5 +55,51 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 46263c9e964147e4ab1f3791eea7b042, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7977680333137373825}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 46263c9e964147e4ab1f3791eea7b042, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8939482198350750837}
   m_SourcePrefab: {fileID: 100100000, guid: 46263c9e964147e4ab1f3791eea7b042, type: 3}
+--- !u!1 &1771620643135690946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 46263c9e964147e4ab1f3791eea7b042, type: 3}
+  m_PrefabInstance: {fileID: 1465752659982493075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7977680333137373825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771620643135690946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd799891cf6727a4ca30539c38539593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cheeseObj: {fileID: 5420432014975695801, guid: ffbe7276a0c346e4895d10561e6cc74f, type: 3}
+  baconObj: {fileID: 3560217670995693434, guid: e99f5dc6c32e483408d25ff1ad5ccc46, type: 3}
+--- !u!65 &8939482198350750837
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771620643135690946}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.587623, y: 0.47204614, z: 2.4368057}
+  m_Center: {x: -0.03620243, y: 0.02634132, z: -0.01426363}
