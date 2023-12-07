@@ -21,8 +21,66 @@ public class GameManager : MonoBehaviour
     public static float emptyPlateNow = -1;
     public static float totalCash = 0;
 
+    public static int[] fullMenu = { 10011, 10111, 11001, 11011, 11111, 12011, 12021, 12022, 12111};
+
+    public static GameManager menuItem;
+
 
     void Start()
+    {
+    
+        orderValue[0] = fullMenu[Random.Range(0, fullMenu.Length)];
+        orderValue[1] = fullMenu[Random.Range(0, fullMenu.Length)];
+        orderValue[2] = fullMenu[Random.Range(0, fullMenu.Length)];
+        orderValue[3] = fullMenu[Random.Range(0, fullMenu.Length)];
+        
+        SelectMenuItem();
+
+    }
+
+    void Update()
+    {
+    
+        if(Input.GetKeyDown(KeyCode.D))
+        {
+        
+            plateNum += 1;
+            plateXpos += 4.14f;
+
+            if (plateNum > 3)
+            {
+            
+                plateNum = 0;
+                plateXpos = -6.65f;
+
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+        
+            plateNum -= 1;
+            plateXpos -= 4.14f;
+
+            if (plateNum < 0)
+            {
+            
+                plateNum = 3;
+                plateXpos = 5.76f;
+
+            }
+        }
+
+        orderTimer[0] -= Time.deltaTime;
+        orderTimer[1] -= Time.deltaTime;
+        orderTimer[2] -= Time.deltaTime;
+        orderTimer[3] -= Time.deltaTime;
+
+        plateSelector.transform.position = new Vector3(plateXpos, -2.84f, 4.94f);
+
+    }
+
+    public void SelectMenuItem()
     {
     
         for (int rep = 0; rep < 4; rep += 1)
@@ -54,39 +112,8 @@ public class GameManager : MonoBehaviour
 
             if (orderValue[rep] == 12111)
             currentPic[rep].GetComponent<MeshRenderer>().material.mainTexture = orderPics[8];
-
-            if (orderValue[rep] == 12122)
-            currentPic[rep].GetComponent<MeshRenderer>().material.mainTexture = orderPics[9];
-
         
         }
-
-    }
-
-    void Update()
-    {
-    
-        if(Input.GetKeyDown("tab"))
-        {
-        
-            plateNum += 1;
-            plateXpos += 4.14f;
-
-            if (plateNum > 3)
-            {
-            
-                plateNum = 0;
-                plateXpos = -6.65f;
-
-            }
-        }
-
-        orderTimer[0] -= Time.deltaTime;
-        orderTimer[1] -= Time.deltaTime;
-        orderTimer[2] -= Time.deltaTime;
-        orderTimer[3] -= Time.deltaTime;
-
-        plateSelector.transform.position = new Vector3(plateXpos, -2.84f, 4.94f);
 
     }
 

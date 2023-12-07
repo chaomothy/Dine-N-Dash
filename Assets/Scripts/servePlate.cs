@@ -7,6 +7,9 @@ public class servePlate : MonoBehaviour
     
     public int thisPlate;
 
+    public GameManager menuItem;
+
+
     private void OnMouseDown()
     {
     
@@ -25,8 +28,16 @@ public class servePlate : MonoBehaviour
     IEnumerator plateReset()
     {
     
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.7f);
         GameManager.emptyPlateNow = -1;
+
+        GameManager.plateValue[thisPlate] = 0;
+        
+        GameManager.orderValue[thisPlate] = GameManager.fullMenu[Random.Range(0, GameManager.fullMenu.Length)];
+
+        menuItem.SelectMenuItem();
+        
+
         GameManager.totalCash += GameManager.orderTimer[thisPlate] * .10f;
 
     }
