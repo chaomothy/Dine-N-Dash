@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
 
         plateSelector.transform.position = new Vector3(plateXpos, -2.84f, 4.94f);
 
+
     }
 
     public void SelectMenuItem()

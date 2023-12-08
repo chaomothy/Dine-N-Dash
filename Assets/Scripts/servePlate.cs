@@ -21,6 +21,7 @@ public class servePlate : MonoBehaviour
         }
 
         GameManager.emptyPlateNow = transform.position.x;
+
         StartCoroutine(plateReset());
     
     }    
@@ -35,8 +36,8 @@ public class servePlate : MonoBehaviour
         
         GameManager.orderValue[thisPlate] = GameManager.fullMenu[Random.Range(0, GameManager.fullMenu.Length)];
 
-        menuItem.SelectMenuItem();
         
+
 
         GameManager.totalCash += GameManager.orderTimer[thisPlate] * .10f;
 
